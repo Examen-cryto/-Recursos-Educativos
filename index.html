@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos Educativos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recursos Educativos</h1>
+  </header>
+  <main>
+    <section class="resource-form">
+      <h2>Agregar Recurso</h2>
+      <form id="resourceForm">
+        <label for="resourceName">Nombre del Recurso:</label>
+        <input type="text" id="resourceName" placeholder="Ej: Curso de Matemáticas" required>
+
+        <label for="resourceLink">Enlace (opcional):</label>
+        <input type="url" id="resourceLink" placeholder="Ej: https://www.ejemplo.com">
+
+        <label for="resourceDescription">Descripción:</label>
+        <textarea id="resourceDescription" rows="3" placeholder="Breve descripción del recurso" required></textarea>
+
+        <button type="submit">Agregar Recurso</button>
+      </form>
+    </section>
+    <section class="resource-list">
+      <h2>Lista de Recursos</h2>
+      <ul id="resourceList">
+        <!-- Los recursos se agregarán dinámicamente aquí -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Recursos Educativos</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
